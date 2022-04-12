@@ -24,8 +24,6 @@ import tensorflow.keras.models as KM
 
 from mrcnn import utils
 import sys
-sys.path.append(
-    "/home/ryzenrtx/Computer Vision/deep-dental-image/mrcnn2/mrcnn/")
 from parallel_model import ParallelModel
 
 # Requires TensorFlow 2.0+
