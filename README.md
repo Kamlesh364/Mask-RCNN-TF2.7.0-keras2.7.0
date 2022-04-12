@@ -7,7 +7,7 @@ Compared to the source code of the old [Mask_RCNN](https://github.com/matterport
 1. `model.py`
 2. `utils.py`
 
-The [Mask-RCNN-TF2](https://github.com/ahmedfgad/Mask-RCNN-TF2) project is tested against **TensorFlow 2.7.0**, **Keras 2.8.0-tf**, and **Python 3.8.10**. Note that the project will not run in TensorFlow 1.0.
+The [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project is tested against **TensorFlow 2.7.0**, **Keras 2.8.0-tf**, and **Python 3.8.10**. Note that the project will not run in TensorFlow 1.0.
 
 # Use the Project Without Installation
 
@@ -113,7 +113,7 @@ The `kangaroo_prediction.py` makes prediction based on the trained weights.
 
 ![Kangaroo Test Image](assets/kangaro-test.png)
 
-Note that the [Mask-RCNN-TF2](https://github.com/ahmedfgad/Mask-RCNN-TF2) project uses the same training and testing code as in the old project.
+Note that the [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project uses the same training and testing code as in the old project.
 
 ![Instance Segmentation Sample](assets/street.png)
 
