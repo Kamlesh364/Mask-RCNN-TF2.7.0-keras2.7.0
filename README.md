@@ -94,7 +94,7 @@ mrcnn.visualize.display_instances(image=image,
 
 # Transfer Learning
 
-The **kangaroo-transfer-learning** [dataset](https://github.com/Kamlesh364/Mask-RCNN-TF2/tree/master/kangaroo-transfer-learning) has both the data and code for training and testing the Mask R-CNN model using TensorFlow 2.7.0. Here is the content of the dataset dirctory:
+The **kangaroo-transfer-learning** [dataset](https://github.com/Kamlesh364/Mask-RCNN-TF2/tree/master/kangaroo-transfer-learning) has both the data and code for training and testing the Mask R-CNN model using TensorFlow 2.7.0. Here is the content of the dataset directory:
 
 ```
 kangaroo-transfer-learning:
