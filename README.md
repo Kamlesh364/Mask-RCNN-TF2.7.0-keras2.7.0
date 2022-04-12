@@ -1,13 +1,13 @@
 # Mask R-CNN for object detection and instance segmentation using Keras==2.8.0 and TensorFlow==2.7.0
 
-The [Mask-RCNN-TF2](https://github.com/ahmedfgad/Mask-RCNN-TF2) project edits the original [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, which only supports TensorFlow 1.0, so that it works on TensorFlow 2.0. Based on this new project, the [Mask R-CNN](https://arxiv.org/abs/1703.06870) can be trained and tested (i.e make predictions) in TensorFlow 2.0. The Mask R-CNN model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
+The [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project edits the original [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, which only supports TensorFlow 1.0, so that it works on TensorFlow 2.7.0. Based on this new project, the [Mask R-CNN](https://arxiv.org/abs/1703.06870) can be trained and tested (i.e make predictions) in TensorFlow 2.7.0. The Mask R-CNN model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
 
-Compared to the source code of the old [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, the [Mask-RCNN-TF2](https://github.com/ahmedfgad/Mask-RCNN-TF2) project edits the following 2 modules:
+Compared to the source code of the old [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, the [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project edits the following 2 modules:
 
 1. `model.py`
 2. `utils.py`
 
-The [Mask-RCNN-TF2](https://github.com/ahmedfgad/Mask-RCNN-TF2) project is tested against **TensorFlow 2.0.0**, **Keras 2.2.4-tf**, and **Python 3.7.3**. Note that the project will not run in TensorFlow 1.0.
+The [Mask-RCNN-TF2](https://github.com/ahmedfgad/Mask-RCNN-TF2) project is tested against **TensorFlow 2.7.0**, **Keras 2.8.0-tf**, and **Python 3.8.10**. Note that the project will not run in TensorFlow 1.0.
 
 # Use the Project Without Installation
 
@@ -94,7 +94,7 @@ mrcnn.visualize.display_instances(image=image,
 
 # Transfer Learning
 
-The **kangaroo-transfer-learning** directory has both the data and code for training and testing the Mask R-CNN model using TensorFlow 2.0. Here is the content of the directory:
+The **kangaroo-transfer-learning** [dataset](https://github.com/Kamlesh364/Mask-RCNN-TF2/tree/master/kangaroo-transfer-learning) has both the data and code for training and testing the Mask R-CNN model using TensorFlow 2.7.0. Here is the content of the dataset dirctory:
 
 ```
 kangaroo-transfer-learning:
@@ -271,7 +271,7 @@ Contributions to this repository are welcome. Examples of things you can contrib
 You can also [join our team](https://matterport.com/careers/) and help us build even more projects like this one.
 
 ## Requirements
-Python 3 (tested on Python 3.7.3), TensorFlow 2.0.0, Keras 2.2.4-tf and other common packages listed in `requirements.txt`.
+Python 3 (tested on Python 3.8.10), TensorFlow 2.7.0, Keras 2.8.0-tf and other common packages listed in `requirements.txt`.
 
 ### MS COCO Requirements:
 To train or test on MS COCO, you'll also need:
