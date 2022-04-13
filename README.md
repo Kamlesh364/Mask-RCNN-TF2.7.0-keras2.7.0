@@ -310,10 +310,12 @@ If you extend this model to other datasets or build projects that use it, I'd lo
 ### [Splash of Color](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46). A blog post explaining how to train this model from scratch and use it to implement a color splash effect.
 ![Balloon Color Splash](assets/balloon_color_splash.gif)
 
-
 ### [Segmenting Nuclei in Microscopy Images](samples/nucleus). Built for the [2018 Data Science Bowl](https://www.kaggle.com/c/data-science-bowl-2018)
 Code is in the `samples/nucleus` directory.
 ![Nucleus Segmentation](assets/nucleus_segmentation.png)
+
+### Segmenting tooth in CBCT Images. Built for the my own dataset and private project.
+![Nucleus Segmentation](assets/tooth_segmentation.png)
 
 ### [Detection and Segmentation for Surgery Robots](https://github.com/SUYEgit/Surgery-Robot-Detection-Segmentation) by the NUS Control & Mechatronics Lab.
 ![Surgery Robot Detection and Segmentation](https://github.com/SUYEgit/Surgery-Robot-Detection-Segmentation/raw/master/assets/video.gif)
