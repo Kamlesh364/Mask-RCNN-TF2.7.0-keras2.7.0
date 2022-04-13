@@ -18,7 +18,7 @@ Here are the steps to use the project for making predictions:
 1. Create a root directory (e.g. **Object Detection**)
 2. Copy the [mrcnn](https://github.com/ahmedfgad/Mask-RCNN-TF2/tree/master/mrcnn) directory inside the root directory.
 3. Download the pre-trained weights inside the root directory. The weights can be downloaded from [this link](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5): https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5.
-4. Create a script for object detection and save it inside the root directory. This script is an example: [samples/mask-rcnn-prediction.py](samples/mask-rcnn-prediction.py). Its code is listed in the next section.
+4. Create a script for object detection and save it inside the root directory. This script is an example: [samples/mrcnn-prediction.py](samples/mrcnn-prediction.py). Its code is listed in the next section.
 5. Run the script.
 
 The directory tree of the project is as follows:
@@ -27,12 +27,12 @@ The directory tree of the project is as follows:
 Object Detection:
 	mrcnn:
 	mask_rcnn_coco.h5
-	mask-rcnn-prediction.py
+	mrcnn-prediction.py
 ```
 
 # Code for Prediction/Inference
 
-The next code uses the pre-trained weights of the Mask R-CNN model based on the COCO dataset. The trained weights can be downloaded from [this link](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5): https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5. The code is accessible through the [samples/mask-rcnn-prediction.py](samples/mask-rcnn-prediction.py) script.
+The next code uses the pre-trained weights of the Mask R-CNN model based on the COCO dataset. The trained weights can be downloaded from [this link](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5): https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5. The code is accessible through the [samples/mrcnn-prediction.py](samples/mrcnn-prediction.py) script.
 
 The COCO dataset has 80 classes. There is an additional class for the background named **BG**. Thus, the total number of classes is 81. The classes names are listed in the `CLASS_NAMES` list. **DO NOT CHANGE THE ORDER OF THE CLASSES**.
 
@@ -94,7 +94,7 @@ mrcnn.visualize.display_instances(image=image,
 
 # Transfer Learning
 
-The **kangaroo-transfer-learning** [dataset](https://github.com/Kamlesh364/Mask-RCNN-TF2/tree/master/kangaroo-transfer-learning) has both the data and code for training and testing the Mask R-CNN model using TensorFlow 2.7.0. Here is the content of the dataset directory:
+The **kangaroo-transfer-learning** [dataset](https://drive.google.com/file/d/1Mk4IugddV9qbVlTUJ9m70bPAdAuUPW3b/view?usp=sharing) has both the data and code for training and testing the Mask R-CNN model using TensorFlow 2.7.0. Here is the content of the dataset directory:
 
 ```
 kangaroo-transfer-learning:
@@ -128,7 +128,7 @@ The repository includes:
 The code is documented and designed to be easy to extend. If you use it in your research, please consider citing this repository (bibtex below).
 
 # Getting Started
-* [mask-rcnn-prediction.py](samples/mask-rcnn-prediction.py): A script for loading the pre-trained weights and making predictions using the Mask R-CNN model.
+* [mrcnn-prediction.py](samples/mrcnn-prediction.py): A script for loading the pre-trained weights and making predictions using the Mask R-CNN model.
 * [coco_labels.txt](samples/coco_labels.txt): The class labels of the COCO dataset.
 * [demo.ipynb](samples/demo.ipynb) Is the easiest way to start. It shows an example of using a model pre-trained on MS COCO to segment objects in your own images. It includes code to run object detection and instance segmentation on arbitrary images.
 * [train_shapes.ipynb](samples/shapes/train_shapes.ipynb) shows how to train Mask R-CNN on your own dataset. This notebook introduces a toy dataset (Shapes) to demonstrate training on a new dataset.
@@ -159,26 +159,21 @@ This is an example of final detection boxes (dotted lines) and the refinement ap
 
 ## 3. Mask Generation
 Examples of generated masks. These then get scaled and placed on the image in the right location.
-
 ![](assets/detection_masks.png)
 
 ## 4.Layer activations
 Often it's useful to inspect the activations at different layers to look for signs of trouble (all zeros or random noise).
-
 ![](assets/detection_activations.png)
 
 ## 5. Weight Histograms
 Another useful debugging tool is to inspect the weight histograms. These are included in the inspect_weights.ipynb notebook.
-
 ![](assets/detection_histograms.png)
 
 ## 6. Logging to TensorBoard
 TensorBoard is another great debugging and visualization tool. The model is configured to log losses and save weights at the end of every epoch.
-
 ![](assets/detection_tensorboard.png)
 
 ## 6. Composing the different pieces into a final result
-
 ![](assets/detection_final.png)
 
 
@@ -263,12 +258,10 @@ Use this bibtex to cite this repository:
 
 ## Contributing
 Contributions to this repository are welcome. Examples of things you can contribute:
-* Speed Improvements. Like re-writing some Python code in TensorFlow or Cython.
+* Speed Improvements. Like re-writing some Python code in TensorFlow.
 * Training on other datasets.
 * Accuracy Improvements.
 * Visualizations and examples.
-
-You can also [join our team](https://matterport.com/careers/) and help us build even more projects like this one.
 
 ## Requirements
 Python 3 (tested on Python 3.8.10), TensorFlow 2.7.0, Keras 2.8.0-tf and other common packages listed in `requirements.txt`.
@@ -287,7 +280,10 @@ If you use Docker, the code has been verified to work on
 
 ## Installation
 1. Clone this repository
-2. Install dependencies
+   ```bash
+   git clone https://github.com/Kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0
+   ```
+3. Install dependencies
    ```bash
    pip3 install -r requirements.txt
    ```
@@ -303,13 +299,12 @@ If you use Docker, the code has been verified to work on
     You must have the Visual C++ 2015 build tools on your path (see the repo for additional details)
 
 # Projects Using this Model
-If you extend this model to other datasets or build projects that use it, we'd love to hear from you.
+If you extend this model to other datasets or build projects that use it, I'd love to hear from you.
 
 ### [4K Video Demo](https://www.youtube.com/watch?v=OOT3UIXZztE) by Karol Majek.
 [![Mask RCNN on 4K Video](assets/4k_video.gif)](https://www.youtube.com/watch?v=OOT3UIXZztE)
 
 ### [Images to OSM](https://github.com/jremillard/images-to-osm): Improve OpenStreetMap by adding baseball, soccer, tennis, football, and basketball fields.
-
 ![Identify sport fields in satellite images](assets/images_to_osm.png)
 
 ### [Splash of Color](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46). A blog post explaining how to train this model from scratch and use it to implement a color splash effect.
@@ -318,7 +313,6 @@ If you extend this model to other datasets or build projects that use it, we'd l
 
 ### [Segmenting Nuclei in Microscopy Images](samples/nucleus). Built for the [2018 Data Science Bowl](https://www.kaggle.com/c/data-science-bowl-2018)
 Code is in the `samples/nucleus` directory.
-
 ![Nucleus Segmentation](assets/nucleus_segmentation.png)
 
 ### [Detection and Segmentation for Surgery Robots](https://github.com/SUYEgit/Surgery-Robot-Detection-Segmentation) by the NUS Control & Mechatronics Lab.
@@ -330,7 +324,6 @@ A proof of concept project by [Esri](https://www.esri.com/), in collaboration wi
 
 ### [Usiigaci: Label-free Cell Tracking in Phase Contrast Microscopy](https://github.com/oist/usiigaci)
 A project from Japan to automatically track cells in a microfluidics platform. Paper is pending, but the source code is released.
-
 ![](assets/project_usiigaci1.gif) ![](assets/project_usiigaci2.gif)
 
 ### [Characterization of Arctic Ice-Wedge Polygons in Very High Spatial Resolution Aerial Imagery](http://www.mdpi.com/2072-4292/10/9/1487)
