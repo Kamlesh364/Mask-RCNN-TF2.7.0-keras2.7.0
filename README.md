@@ -314,7 +314,7 @@ If you extend this model to other datasets or build projects that use it, I'd lo
 Code is in the `samples/nucleus` directory.
 ![Nucleus Segmentation](assets/nucleus_segmentation.png)
 
-### Segmenting tooth in CBCT Images. Built for the my own dataset and private project.
+### Segmenting tooth in CBCT Images. Built for my own dataset and private project.
 ![Nucleus Segmentation](assets/tooth_segmentation.png)
 
 ### [Detection and Segmentation for Surgery Robots](https://github.com/SUYEgit/Surgery-Robot-Detection-Segmentation) by the NUS Control & Mechatronics Lab.
