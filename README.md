@@ -1,13 +1,17 @@
-# Mask R-CNN for object detection and instance segmentation using Keras==2.7.0 and TensorFlow==2.7.0
+# Mask R-CNN for object detection and instance segmentation using Keras==2.8.0 and TensorFlow==2.7.0
 
-The [Mask-RCNN-TF2.7.0-keras2.7.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.7.0) project edits the original [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, which only supports TensorFlow 1.0, so that it works on TensorFlow 2.7.0. Based on this new project, the [Mask R-CNN](https://arxiv.org/abs/1703.06870) can be trained and tested (i.e make predictions) in TensorFlow 2.7.0. The Mask R-CNN model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
+The [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project edits the original [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, which only supports TensorFlow 1.0, so that it works on TensorFlow 2.7.0. Based on this new project, the [Mask R-CNN](https://arxiv.org/abs/1703.06870) can be trained and tested (i.e make predictions) in TensorFlow 2.7.0. The Mask R-CNN model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
 
-Compared to the source code of the old [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, the [Mask-RCNN-TF2.7.0-keras2.7.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.7.0) project edits the following 2 modules:
+Compared to the source code of the old [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, the [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project edits the following 2 modules:
 
 1. `model.py`
 2. `utils.py`
 
-The [Mask-RCNN-TF2.7.0-keras2.7.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.7.0) project is tested against **TensorFlow 2.7.0**, **Keras 2.7.0-tf**, and **Python 3.8.10**. Note that the project will not run in TensorFlow 1.0.
+The [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project is tested against **TensorFlow 2.7.0**, **Keras 2.8.0-tf**, and **Python 3.8.10** for the following system specifications:
+1. GPU - `GeForce RTX 3060 12GiB`
+2. OS - `Ubuntu20.04`
+
+**Note:** `This project does not support any of the available versions of Tensorflow1.`
 
 # Use the Project Without Installation
 
@@ -15,7 +19,7 @@ It is not required to install the project. It is enough to copy the `mrcnn` dire
 
 Here are the steps to use the project for making predictions:
 
-1. Create a root directory (e.g. **Object Detection**)
+1. Create a root directory (e.g. **ObjectDetection**)
 2. Copy the [mrcnn](https://github.com/ahmedfgad/Mask-RCNN-TF2/tree/master/mrcnn) directory inside the root directory.
 3. Download the pre-trained weights inside the root directory. The weights can be downloaded from [this link](https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5): https://github.com/matterport/Mask_RCNN/releases/download/v2.0/mask_rcnn_coco.h5.
 4. Create a script for object detection and save it inside the root directory. This script is an example: [samples/mrcnn-prediction.py](samples/mrcnn-prediction.py). Its code is listed in the next section.
@@ -24,7 +28,7 @@ Here are the steps to use the project for making predictions:
 The directory tree of the project is as follows:
 
 ```
-Object Detection:
+ObjectDetection:
 	mrcnn:
 	mask_rcnn_coco.h5
 	mrcnn-prediction.py
@@ -113,7 +117,7 @@ The `kangaroo_prediction.py` makes prediction based on the trained weights.
 
 ![Kangaroo Test Image](assets/kangaro-test.png)
 
-Note that the [Mask-RCNN-TF2.7.0-keras2.7.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.7.0) project uses the same training and testing code as in the old project.
+Note that the [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project uses the same training and testing code as in the old project.
 
 ![Instance Segmentation Sample](assets/street.png)
 
@@ -264,7 +268,7 @@ Contributions to this repository are welcome. Examples of things you can contrib
 * Visualizations and examples.
 
 ## Requirements
-Python 3 (tested on Python 3.8.10), TensorFlow 2.7.0, Keras 2.7.0-tf and other common packages listed in `requirements.txt`.
+Python 3 (tested on Python 3.8.10), TensorFlow 2.7.0, Keras 2.8.0-tf and other common packages listed in `requirements.txt`.
 
 ### MS COCO Requirements:
 To train or test on MS COCO, you'll also need:
