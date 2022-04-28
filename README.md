@@ -9,7 +9,7 @@ Compared to the source code of the old [Mask_RCNN](https://github.com/matterport
 
 The [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project is tested against **TensorFlow 2.7.0**, **Keras 2.8.0-tf**, and **Python 3.8.10** for the following system specifications:
 1. GPU - `GeForce RTX 3060 12GiB`
-2. OS - `Ubuntu20.04`
+2. OS - `Ubuntu20.04`, `Windows 10` and `Windows 11`
 
 **Note:** `This project does not support any of the available versions of Tensorflow1.`
 
