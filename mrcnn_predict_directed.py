@@ -35,7 +35,7 @@ class SimpleConfig(mrcnn_directed.config.Config):
     GPU_COUNT = 1
     IMAGES_PER_GPU = 1
 
-	# Number of classes = number of classes + 1 (+1 for the background). The background class is named BG
+    # Number of classes = number of classes + 1 (+1 for the background). The background class is named BG
     NUM_CLASSES = len(CLASS_NAMES)
 
     POST_NMS_ROIS_INFERENCE = POST_NMS_ROIS_INFERENCE
