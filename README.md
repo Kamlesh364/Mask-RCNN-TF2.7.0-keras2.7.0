@@ -1,13 +1,13 @@
-# Mask R-CNN for object detection and instance segmentation using Keras==2.8.0 and TensorFlow==2.7.0
+# Mask R-CNN for object detection and instance segmentation using Keras==2.7.0 and TensorFlow==2.7.0
 
-The [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project edits the original [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, which only supports TensorFlow 1.0, so that it works on TensorFlow 2.7.0. Based on this new project, the [Mask R-CNN](https://arxiv.org/abs/1703.06870) can be trained and tested (i.e make predictions) in TensorFlow 2.7.0. The Mask R-CNN model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
+The [Mask-RCNN-TF2.7.0-keras2.7.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.7.0) project edits the original [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, which only supports TensorFlow 1.0, so that it works on TensorFlow 2.7.0. Based on this new project, the [Mask R-CNN](https://arxiv.org/abs/1703.06870) can be trained and tested (i.e make predictions) in TensorFlow 2.7.0. The Mask R-CNN model generates bounding boxes and segmentation masks for each instance of an object in the image. It's based on Feature Pyramid Network (FPN) and a ResNet101 backbone.
 
-Compared to the source code of the old [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, the [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project edits the following 2 modules:
+Compared to the source code of the old [Mask_RCNN](https://github.com/matterport/Mask_RCNN) project, the [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.7.0) project edits the following 2 modules:
 
 1. `model.py`
 2. `utils.py`
 
-The [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project is tested against **TensorFlow 2.7.0**, **Keras 2.8.0-tf**, and **Python 3.8.10** for the following system specifications:
+The [Mask-RCNN-TF2.7.0-keras2.7.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.7.0) project is tested against **TensorFlow 2.7.0**, **Keras 2.7.0-tf**, and **Python 3.8.10** for the following system specifications:
 1. GPU - `GeForce RTX 3060 12GiB`
 2. OS - `Ubuntu20.04`, `Windows 10` and `Windows 11`
 
@@ -117,7 +117,7 @@ The `kangaroo_prediction.py` makes prediction based on the trained weights.
 
 ![Kangaroo Test Image](assets/kangaro-test.png)
 
-Note that the [Mask-RCNN-TF2.7.0-keras2.8.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0) project uses the same training and testing code as in the old project.
+Note that the [Mask-RCNN-TF2.7.0-keras2.7.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7.0-keras2.7.0) project uses the same training and testing code as in the old project.
 
 ![Instance Segmentation Sample](assets/street.png)
 
@@ -268,7 +268,7 @@ Contributions to this repository are welcome. Examples of things you can contrib
 * Visualizations and examples.
 
 ## Requirements
-Python 3 (tested on Python 3.8.10), TensorFlow 2.7.0, Keras 2.8.0-tf and other common packages listed in `requirements.txt`.
+Python 3 (tested on Python 3.8.10), TensorFlow 2.7.0, Keras 2.7.0-tf and other common packages listed in `requirements.txt`.
 
 ### MS COCO Requirements:
 To train or test on MS COCO, you'll also need:
@@ -285,7 +285,7 @@ If you use Docker, the code has been verified to work on
 ## Installation
 1. Clone this repository
    ```bash
-   git clone https://github.com/Kamlesh364/Mask-RCNN-TF2.7.0-keras2.8.0
+   git clone https://github.com/Kamlesh364/Mask-RCNN-TF2.7.0-keras2.7.0
    ```
 3. Install dependencies
    ```bash
