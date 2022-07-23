@@ -11,7 +11,7 @@ The [Mask-RCNN-TF2.7.0-keras2.7.0](https://github.com/kamlesh364/Mask-RCNN-TF2.7
 1. GPU - `GeForce RTX 3060 12GiB`
 2. OS - `Ubuntu20.04`, `Windows 10` and `Windows 11`
 
-**Note:** `This project may not support any other available versions of Tensorflow1.`
+**Note:** `This project does not support any of the available versions of Tensorflow1.`
 
 # Use the Project Without Installation
 
